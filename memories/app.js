@@ -240,7 +240,7 @@
     finally{URL.revokeObjectURL(url);cache.delete(url);if(token===state.sequence){$('#dropzone').removeAttribute('aria-busy');$('#photoInput').value='';}}
   }
   const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
-  let heroTimer=null,heroPaused=true,heroHovered=false,heroFocused=false;
+  let heroTimer=null,heroPaused=reducedMotion.matches,heroHovered=false,heroFocused=false;
   function scheduleHero(){
     clearTimeout(heroTimer);
     const stopped=heroPaused||heroHovered||heroFocused||document.hidden;
