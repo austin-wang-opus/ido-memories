@@ -6,8 +6,6 @@
 .lifestyle-caption{position:absolute;left:20px;top:62px;color:#fffaf4;text-shadow:0 1px 8px #271a12;display:none}
 .lifestyle-caption span{display:block;font-size:12px;margin-bottom:6px}
 .lifestyle-caption strong{font:italic 24px Georgia,serif}
-.memory-version .story-image{height:auto;aspect-ratio:4/5}
-.memory-version .travel-story.with-image>img{height:auto;aspect-ratio:4/5;object-fit:cover}
 .photo-enhancement{display:flex;gap:10px;align-items:center;min-height:44px;margin-bottom:18px;cursor:pointer;font-size:14px}
 .photo-enhancement input{width:20px;height:20px;accent-color:var(--wine);flex-shrink:0}
 .photo-enhancement small{display:block;font-size:12px;color:var(--muted);margin-top:5px;line-height:1.5}
@@ -19,16 +17,21 @@
 .memory-version .eyebrow{font-size:13px}
 .memory-intro{text-align:center;background:#f4eee4;padding:76px 20%}
 .memory-intro>p:last-child{max-width:690px;margin:26px auto 0;color:var(--muted);font-size:18px}
-.memory-version .story-copy{padding:32px}
-.memory-version .story-copy h3{font-size:34px}
+.memory-version .stories{padding-top:56px;padding-bottom:56px}
+.memory-version .stories .section-heading{gap:24px;margin-bottom:28px}
+.memory-version .stories h2{font-size:clamp(32px,3.4vw,48px)}
+.memory-version .stories .section-heading .eyebrow{margin-bottom:12px}
+.memory-version .story-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.memory-version .story-card{display:flex;flex-direction:column;min-width:0}
+.memory-version .story-image{height:clamp(170px,18vw,230px);aspect-ratio:auto;flex-shrink:0}
+.memory-version .story-image img{object-position:50% 15%}
+.memory-version .story-copy{padding:22px;display:flex;flex-direction:column;flex:1}
+.memory-version .story-copy .eyebrow{font-size:11px;margin-bottom:10px}
+.memory-version .story-copy h3{font-size:28px;margin-bottom:12px}
+.memory-version .story-copy>p:not(.eyebrow){font-size:15px;line-height:1.6;margin-bottom:16px}
+.memory-version .story-copy .text-button{margin-top:auto;align-self:flex-start;min-height:44px;gap:12px;font-size:14px}
 .memory-version .story-card.couple{background:#eee4e0}
-.memory-version .story-copy .occasions{font-size:13px}
-.travel-story{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:28px;padding:44px;background:#e8ecdf}
-.travel-story>div>p:not(.eyebrow){max-width:460px}
-.travel-prompt{font:32px/1.4 Georgia,serif;padding:30px;border-left:1px solid #bac2ad}
-.travel-story.with-image{padding:0;gap:0;overflow:hidden}
-.travel-story.with-image>div{padding:40px}
-.travel-story.with-image>img{height:430px;width:100%;object-fit:cover}
+.memory-version .story-card.travel{background:#e8ecdf}
 .memory-version .creator-title>p:last-child{max-width:640px;margin-left:auto;margin-right:auto}
 .memory-version .sample-row{flex-wrap:wrap}
 .memory-version .sample-row button{min-height:44px;padding:8px 4px}
@@ -38,5 +41,5 @@
 .memory-version .photo-guidance p{margin:0}
 .memory-version .photo-guidance strong{display:block;margin-bottom:5px}
 @media(max-width:1000px){.memory-intro{padding:64px 10%}.memory-version .hero h1{font-size:clamp(42px,6vw,60px)}}
-@media(max-width:720px){.memory-version .hero{grid-template-columns:1fr}.memory-version .hero h1{font-size:58px}.memory-intro{padding:60px 7%}.memory-intro>p:last-child{font-size:16px}.travel-story{grid-template-columns:1fr;gap:20px;padding:28px}.travel-prompt{font-size:26px;padding:20px 0 0;border-left:0;border-top:1px solid #bac2ad}.travel-story.with-image>div{padding:28px}.travel-story.with-image>img{height:330px}.memory-version .story-copy{padding:26px}.memory-version .photo-note{max-width:calc(100% - 48px)}}
+@media(max-width:720px){.memory-version .hero{grid-template-columns:1fr}.memory-version .hero h1{font-size:58px}.memory-intro{padding:60px 7%}.memory-intro>p:last-child{font-size:16px}.memory-version .photo-note{max-width:calc(100% - 48px)}.memory-version .stories{padding-top:40px;padding-bottom:40px}.memory-version .stories .section-heading>p{margin-top:14px}.memory-version .story-grid{grid-template-columns:1fr;gap:14px}.memory-version .story-card{display:grid;grid-template-columns:30% minmax(0,1fr)}.memory-version .story-image{height:100%;min-height:180px}.memory-version .story-copy{padding:16px}.memory-version .story-copy h3{font-size:24px;margin-bottom:8px}.memory-version .story-copy>p:not(.eyebrow){font-size:16px;margin-bottom:8px}.memory-version .story-copy .eyebrow{font-size:10px;margin-bottom:8px}}
 @media(max-width:420px){.memory-version .hero h1{font-size:44px}.memory-version .hero-copy{padding-top:36px;padding-bottom:32px}}
